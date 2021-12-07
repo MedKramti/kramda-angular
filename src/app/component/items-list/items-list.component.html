@@ -1,0 +1,20 @@
+<div class="p-4 bg-white light-shadow border-20">
+    <h2>Last Distributions</h2>
+    <div class="items mt-4">
+        <div class="item d-flex" *ngFor="let item of items">
+            <div class="item-image">
+                <img *ngIf="item.active" src="./assets/images/icons/distribution2.png">
+                <img *ngIf="!item.active" src="./assets/images/icons/distribution3.png">
+            </div>
+            <div class="center">
+                <h4>{{item.name | titlecase}}</h4>
+                <div class="center">
+                    <p class="text-light-gray">{{ item.description | slice:0:15 }}{{item.description.length > 6 ? '...' : ''}}</p>
+                    <p class="badge badge-danger" *ngIf="!item.active">Inactive</p>
+                    <p class="badge badge-success" *ngIf="item.active">Active</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

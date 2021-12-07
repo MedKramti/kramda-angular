@@ -1,0 +1,6 @@
+<div class="piechart p-4 bg-white light-shadow border-20">
+    <h2>{{'chart_title' | titlecase }}</h2>
+    <p class="text-light-gray">{{ 'sub_title' }}</p>
+    <canvas baseChart [data]="pieChartData" [type]="pieChartType" [options]="barChartOptions" width="100" height="100">
+        </canvas>
+</div>

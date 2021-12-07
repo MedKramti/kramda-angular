@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #fbfbfb;
+}
+
+.badge-danger {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.light-shadow {
+    box-shadow: 0px 12px 23px 0px rgb(62 73 84 / 4%)
+}
+
+.border-20 {
+    border-radius: 20px;
+}
+
+.text-light-gray {
+    color: #7e7e7e;
+}

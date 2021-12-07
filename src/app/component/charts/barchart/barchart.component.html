@@ -1,0 +1,7 @@
+<div class="activity p-4 bg-white light-shadow border-20">
+    <h2>{{chart_title | titlecase }}</h2>
+    <p class="text-light-gray">{{ sub_title }}</p>
+    <div class="chart">
+        <canvas baseChart id="myChart" [data]="barChartData" [type]="barChartType" [options]="barChartOptions"></canvas>
+    </div>
+</div>
