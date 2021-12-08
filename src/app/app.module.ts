@@ -9,6 +9,7 @@ import { BarChartComponent } from './component/charts/barchart/barchart.componen
 import { NgChartsModule } from 'ng2-charts';
 import { PieChartComponent } from './component/charts/pie-chart/pie-chart.component';
 import { ItemsListComponent } from './component/items-list/items-list.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ItemsListComponent } from './component/items-list/items-list.component'
     ImageCardComponent,
     BarChartComponent,
     PieChartComponent,
-    ItemsListComponent
+    ItemsListComponent,
+    NavbarComponent
     ],
   imports: [
     BrowserModule,
