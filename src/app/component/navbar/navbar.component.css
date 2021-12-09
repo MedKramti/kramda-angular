@@ -1,3 +1,7 @@
 .navbar-collapse {
     margin-left: 20px;
 }
+
+.logo {
+    mix-blend-mode: multiply;
+}

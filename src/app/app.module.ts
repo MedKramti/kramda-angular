@@ -10,6 +10,18 @@ import { NgChartsModule } from 'ng2-charts';
 import { PieChartComponent } from './component/charts/pie-chart/pie-chart.component';
 import { ItemsListComponent } from './component/items-list/items-list.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
+import { AreaComponent } from './pages/area/area.component';
+import { TableComponent } from './component/table/table.component';
+import { DatePipe } from '@angular/common';
+import { EmailComponent } from './pages/email/email.component';
+import { DistributionComponent } from './pages/distribution/distribution.component';
+import { FormComponent } from './component/form/form.component';
+import { EditEmailComponent } from './pages/email/edit-email/edit-email.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SharedFormComponent } from './component/form/shared-form/shared-form.component';
+import { EditAreaComponent } from './pages/area/edit-area/edit-area.component';
+import { BackComponent } from './component/back/back.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +31,25 @@ import { NavbarComponent } from './component/navbar/navbar.component';
     BarChartComponent,
     PieChartComponent,
     ItemsListComponent,
-    NavbarComponent
+    NavbarComponent,
+    AreaComponent,
+    TableComponent,
+    EmailComponent,
+    DistributionComponent,
+    FormComponent,
+    EditEmailComponent,
+    SharedFormComponent,
+    EditAreaComponent,
+    BackComponent,
+    FooterComponent,
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgChartsModule
+    NgChartsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

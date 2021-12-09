@@ -1,0 +1,70 @@
+.add-new {
+    margin-left: 20px;
+}
+
+.form-control {
+    border-right: 0px;
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+}
+
+.transparent {
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    border-radius: 0 10px 10px 0;
+}
+
+tr {
+    border-bottom: 1px solid #f0f1f5 !important;
+}
+
+td,
+th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.page-number {
+    background-color: #e3e4eb !important;
+}
+
+.action-btn {
+    border: none !important;
+    padding: 4px 5px;
+}
+
+.delete {
+    background-color: #fee6ea !important;
+    border-color: #fee6ea;
+}
+
+.delete svg {
+    fill: #F72B50;
+}
+
+.edit svg {
+    fill: #2F4CDD;
+}
+
+.edit {
+    background-color: #f4f6fd;
+}
+
+.delete:hover svg {
+    fill: #fff !important;
+}
+
+.delete:hover {
+    background-color: #f72b50 !important;
+    color: white
+}
+
+.edit:hover svg {
+    fill: #fff !important;
+    color: white
+}
+
+.edit:hover {
+    background-color: #2f4cdd !important;
+    color: white
+}

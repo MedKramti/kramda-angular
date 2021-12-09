@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
 
 @Component({
-  selector: 'app-doughnutchart',
+  selector: 'app-pie-chart',
   templateUrl: './pie-chart.component.html',
   styleUrls: ['./pie-chart.component.css']
 })
 export class PieChartComponent implements OnInit {
+@Input() chart_title = "";
+@Input() sub_title = "";
 
 public pieChartData: ChartData<'pie', number[], string | string[]> = {
   labels: [ [ 'Area' ], [ 'E-mail' ], 'Distribution' ],

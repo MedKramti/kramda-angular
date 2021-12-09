@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<div class="container mt-5">
+<div class="container">
     <div class="row align-items-center">
         <div class="col-md-6 col-sm-12">
             <app-bar-chart [chart_title]="'Distribution'" [sub_title]="'Previous Week'"></app-bar-chart>
@@ -24,12 +24,11 @@
     </div>
     <div class="row mt-5">
         <div class="col-md-6 col-sm-12">
-            <app-doughnutchart></app-doughnutchart>
+            <app-pie-chart [chart_title]="'Elements'" [sub_title]="'Total Number'"></app-pie-chart>
         </div>
         <div class="col-md-6 col-sm-12">
             <app-items-list [items]="items"></app-items-list>
         </div>
     </div>
-
 
 </div>

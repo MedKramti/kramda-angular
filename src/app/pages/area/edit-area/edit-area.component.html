@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-12">
+            <app-back></app-back>
+        </div>
+        <div class="col-md-8 col-sm-12">
+            <div class="light-shadow bg-white p-4 border-20">
+                <h4>Edit An Area</h4>
+                <hr>
+                <form [formGroup]="fg" (ngSubmit)="submit($event)" action="#">
+                    <app-shared-form [parentGroup]="fg" [sharedForm]="fg.get('sharedForm')"></app-shared-form>
+                    <input type="submit" class="btn btn-primary border-20" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div [formGroup]="parentGroup">
+    <div formGroupName="sharedForm">
+        <label id="name">Name</label>
+        <input type="text" name="name" class="form-control" formControlName="name">
+        <div class="text-danger mb-2" *ngIf="name && !name?.valid && (name?.dirty || name?.touched)">
+            <div *ngIf="name.errors && name.errors['required']">
+                This field is required
+            </div>
+            <div *ngIf="name.errors && name.errors['maxlength']">
+                The maximum length is 512
+            </div>
+        </div>
+        <label id="description">Description</label>
+        <textarea name="description" (keyup)="calculateCharactersRemaining($event)" class="form-control" formControlName="description"></textarea>
+        <div class="char-remaining float-right mb-2" [ngClass]="{ 'text-danger' : characters_remaining < 0}">
+            Characters remaining: {{ characters_remaining }}
+        </div>
+        <div class="text-danger mb-2" *ngIf="description && !description?.valid && (description?.dirty || description?.touched)">
+            <div *ngIf="description.errors && description.errors['required']">
+                This field is required
+            </div>
+            <div *ngIf="description.errors && description.errors['maxlength']">
+                The maximum length is 2048
+            </div>
+        </div>
+    </div>
+</div>
